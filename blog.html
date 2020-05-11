@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -36,20 +36,20 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link " href="/blog.html">Blogs</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Topics
+                        Jobs
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Trend Technology</a>
-                        <a class="dropdown-item" href="#">Machine Learning</a>
-                        <a class="dropdown-item" href="#">latest Research</a>
+                        <a class="dropdown-item" href="#">Batch 2021</a>
+                        <a class="dropdown-item" href="#">Batch 2020</a>
+                        <a class="dropdown-item" href="#">Batch 2019</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Your Suggestions</a>
+                        <a class="dropdown-item" href="#">Eperience Professional</a>
                     </div>
                 </li>
                 <li class="nav-item ">
@@ -66,14 +66,20 @@
     <div class="container my-4">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7 ">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                <h2 class="featurette-heading">2020|AWS online summit <span class="text-muted">It’ll blow your
                         mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <p class="lead">AWS Global Summits are free events that bring the cloud computing community together
+                     to connect, collaborate, and learn about AWS. At the AWS Summits, you can learn how to choose the
+                      right database, modernize your data warehouse, and drive digital transformation using AI. 
+                      Summits are held in major cities around the world and attract technologists from all industries 
+                      and skill levels who want to discover how AWS can help them innovate quickly 
+                      When you attend an AWS Summit, you hear from AWS leaders, experts, partners, and customers. Learn 
+                     by attending technical breakout sessions, demonstrations, hands-on workshops, labs, and team 
+                     challenges. Network with AWS partners and your peers in our Partner and Solutions Expo. </p>
+                     <input type="button" class="btn btn-info" value="Register Now" target="null" onclick=" relocate_home()">
             </div>
             <div class="col-md-5 order-md-1">
-                <img  class="img-fluid"  src="about1.jpg"> 
+                <img  class="img-fluid"  src="aws_blog.png"> 
             </div>
         </div>
     </div>
@@ -81,14 +87,21 @@
     <div class="container my-4">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7 order-md-1">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Save Rendering Time & Increase Image Quality with Free Open Source Library<span class="text-muted"></span></h2>
+                <p class="lead">Graphics developers routinely face a tradeoff when using ray tracing to create
+                     realistic, immersive experiences: allow for the hours (and hours) it takes to render high-quality
+                      images or use denoising methods to produce less-than-high-quality images … but do it a lot faster.
+                     Intel® Open Image Denoise can remove this dilemma.
+                    It’s an open source library of high-performance, high-quality, machine-learning-based denoising 
+                    filters for images rendered with ray tracing. Part of the Intel® oneAPI Rendering Toolkit, this
+                     library is suitable for both interactive and final-frame rendering, runs on almost any Intel CPU, 
+                     and significantly reduces rendering times.</p>
+             <input type="button" class="btn btn-info" value="Register Now" target="null" onclick="relocate_webinar()">
+            
+            
             </div>
             <div class="col-md-5">
-                <img class="img-fluid" src="about2.jpg"> 
+                <img class="img-fluid" src="intel_blog.png"> 
             </div>
         </div>
     </div>
@@ -96,17 +109,34 @@
     <div class="container my-4">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Competitive Programming </h2>
+                <p class="lead">Want to be an software engineer at Google, Amazon, Microsoft ? The items listed here will prepare you well for a technical 
+                    interview at just about any software company, including the giants: Amazon, Facebook, Google, and Microsoft.</p>
+                    <input type="button" class="btn btn-info" value="Learn Now" target="null" onclick="relocate_coding()">
             </div>
             <div class="col-md-5 order-md-2">
-                <img  class="img-fluid" src="about3.jpg"> 
+                <img  class="img-fluid" src="comp_blog.jpg"> 
             </div>
         </div>
     </div>
+
+    
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Cisco Cyber security Certification</h2>
+                <p class="lead">Cybersecurity professionals who can protect and defend an organization's network are in high-demand right now.
+                     Put your detective-like qualities to work by gaining knowledge toward a career in fighting cybercrime.</p>
+                    <input type="button" class="btn btn-info" value="Register Now" target="null" onclick="relocate_webinar()">
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img  class="img-fluid" src="cisco_blog.png"> 
+            </div>
+        </div>
+    </div>
+
+    
+    
 
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
