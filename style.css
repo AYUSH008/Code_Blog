@@ -84,6 +84,28 @@ section .section-title {
     position: absolute;
     left: 50%;
     margin-left: -3px;
+    padding-right: 40px;
     
     
   }
+  .part h3{
+      text-align: center;
+  }
+  .part2 h5{
+      text-align: right;
+      font-size: 18px;
+      font-family: sans-serif;
+      text-align: right;   
+  }
+  .part1 h5{
+    text-align: right;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: left;
+    
+    
+}
+table, th, td{
+    border: 1px solid black;
+
+}
