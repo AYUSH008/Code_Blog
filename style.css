@@ -105,7 +105,16 @@ section .section-title {
     
     
 }
-table, th, td{
-    border: 1px solid black;
-
+.tb-text h3{
+    font-size: 30px;
+    color: black;
+    font-family: sans-serif;
+}
+.table2 thead, tr {
+    color: black;
+    font-family: sans-serif;
+}
+.table2 thead{
+    background: #222222;
+    
 }
