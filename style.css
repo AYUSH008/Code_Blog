@@ -118,3 +118,26 @@ section .section-title {
     background: #222222;
     
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30% ;
+    grid-gap: 5px;
+    
+    padding: 25px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    padding: 10px ;
+    font-size: 14px;
+  }
+  .card {
+      margin-bottom: 8px;
+  }
+  .part1{
+      margin-bottom: 10px;
+      font-family: sans-serif;
+  }
