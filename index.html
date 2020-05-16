@@ -23,12 +23,12 @@
     <script src="script.js"></script>
 
 
-    <title>Resource Block</title>
+    <title>Resource Blocks</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Resource blocks</a>
+        <a class="navbar-brand" href="#">Resource Blocks</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -366,12 +366,12 @@
                 Interships</p>
             <form id="newsletter-form">
                 <div class="input-group mb-3">
-                    <input class="form-control bg-transparent border-dark border-right-0" type="email"
+                    <input class="form-control bg-transparent border-dark border-right-0" id="email" type="email"
                         placeholder="Your Email Address" aria-label="Your Email Address">
                     <div class="input-group-append">
                         <div id="emailid">
                             <button class="btn btn-outline-dark border-left-0" type="submit"> <i
-                                    class="fa fa-paper-plane text-lg"></i></button>
+                                    onclick="writedata()" class="fa fa-paper-plane text-lg"></i></button>
                         </div>
                     </div>
                 </div>
@@ -479,7 +479,39 @@
             typespeed: 500,
         });
     </script>
+   
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
 
-</body>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_jN6lIyb7-Ytp2bGSitmsF8euOQZaLw0",
+    authDomain: "resource-block.firebaseapp.com",
+    databaseURL: "https://resource-block.firebaseio.com",
+    projectId: "resource-block",
+    storageBucket: "resource-block.appspot.com",
+    messagingSenderId: "106265315093",
+    appId: "1:106265315093:web:0c69fb8454c1be3ac6cb1c",
+    measurementId: "G-31B2CL2HQC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+</script>
+
+<script>
+   var database = firebase.database();   
+  function writedata()
+  {
+      firebase.database().ref("user").set({
+          email :document.getElementById("email").value
+      });
+  }
+</script>
 </html>
